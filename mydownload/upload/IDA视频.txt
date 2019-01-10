@@ -1,0 +1,13 @@
+发现了一个老外的基地，内有N多的OllyDbg 1.1   2.0插件、IDA使用视频 
+http://www.woodmann.com连接很多，自己看吧，逆向资源、论坛学习资料等等等等等等等等等。。。
+OD插件：
+OLLYDBG EXTENSIONS VERSION 1.X
+
+
+OLLYDBG EXTENSIONS VERSION 2.X
+IDA上手视频：
+http://www.woodmann.com/TiGa/idaseries.html
+
+http://www.woodmann.com/TiGa/unpacking.html
+反正这些插件，视频俺还没有掌握或用过呢，楼下的爱妃们呢？
+资源太多太杂，实在不好分类和描述。请自备 翻译插件 跟 攀攀乐

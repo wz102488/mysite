@@ -1,0 +1,17 @@
+<
+{% extends "base.html" %}
+{% block content %}
+      <div class="jumbotron">
+      {{ wenzhangs }}
+          <hr /><h3>文件id：{{ wenzhangs.id }}</h3><hr />
+        <h1>{{wenzhang.title}}</h1>
+        <p class="lead">{{ wenzhangs.content }}</p>
+
+          分类 ：{{ wenzhangs.fenlei }}<br />
+          作者：{{ wenzhangs.zzname }}<br />
+          创建时间：{{ wenzhangs.createTime }}<br />
+          文件链接：<a href="{% url 'download' wenzhangs.fileLink.id %}" >点我下载文件</a><br />
+
+
+      </div>
+{% endblock %}

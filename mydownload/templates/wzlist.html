@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+{% block content %}
+      <div class="page-header">
+      {% for fenLei in fenLeis %}
+          <hr />
+        <a href="{% url 'wz' fenLei.id %}"><h1>{{fenLei.title}}</h1></a>
+        <p class="lead">{{ fenLei.content }}</p>
+      {% endfor %}
+      </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+              {% for b in bt %}
+           <h1>{{ b.title }}</h1>
+            <p>{{ b.content }}</p>
+              {% endfor %}
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-lg-4">
+                {% for wenZhang in wenZhangs %}
+              <a href="{% url 'wz' wenZhang.id %}"><h2>{{ wenZhang.title }}</h2></a>
+              <p>{{ wenZhang.content }}</p>
+              <p><a class="btn btn-default" href="{% url 'wz' wenZhang.id %}" role="button">查看详情 &raquo;</a></p>
+                {% endfor %}
+            </div><!--/.col-xs-6.col-lg-4-->
+
+
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">分类</a>
+              {% for fenlei in fenleis %}
+            <a href="{% url 'list' fenlei.id %}" class="list-group-item">{{ fenlei.name }}</a>
+              {% endfor %}
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+{% endblock %}
